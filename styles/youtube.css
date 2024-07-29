@@ -7,11 +7,17 @@ p {
   display: block;
 }
 
+.stage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
 .video-preview {
   display: inline-block;
   width: 300px;
   vertical-align: top;
-  margin-right: 15px;
 }
 .thumbnail-row {
   margin-bottom: 12px;
@@ -21,20 +27,15 @@ p {
   width: 300px;
 }
 
-.channel-pfp {
-  display: inline-block;
-  width: 50px;
-  vertical-align: top;
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 5fr;;
 }
 .pfp {
   width: 80%;
   border-radius: 25px;
 }
 
-.video-info {
-  display: inline-block;
-  width: 240px;
-}
 .video-title {
   font-size: 14px;
   font-weight: 500;
